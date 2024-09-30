@@ -1,0 +1,14 @@
+{
+  "name": "qaaut_pwframework_premierman",
+  "version": "1.0.0",
+  "description": "QA Automation Framework Development for Premierman Website (Playwright)",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4"
+  }
+}
