@@ -10,5 +10,16 @@ export const Locators = {
     },
     UserAccountPage:{
         userEmail: (email:string) => `xpath=//p[text()="Email"]/../../p[text()='${email}']`
+    },
+    NavBar:{
+        NewInBtn: 'a[id="topNav_NewIn"]',
+        MenswearBtn: 'a[id="topNav_Menswear"]',
+        NightwearUnderwearBtn: 'a[id="topNav_Nightwear&Underwear"]',
+        ShoesBtn: 'a[id="topNav_Shoes"]',
+        WomensBtn: 'a[id="topNav_Womens"]',
+        HomeGardenBtn: 'a[id="topNav_Home&Garden"]',
+        ElectricalsBtn: 'a[id="topNav_Electricals"]',
+        GiftsBtn: 'a[id="topNav_Gifts"]',
+        OutletBtn: 'a[id="topNav_Outlet"]',
     }
 };
