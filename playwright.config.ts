@@ -36,7 +36,7 @@ export default defineConfig({
   projects: [
     {
       name: 'login',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Firefox'] },
       testMatch: '/login.spec.ts',
     },
     // {
@@ -45,11 +45,13 @@ export default defineConfig({
     //   dependencies: ['login'],
     //   testIgnore: '/login.spec.ts',
     // },
-
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+      dependencies: ['login'],
+      testIgnore: '/login.spec.ts'
+    },
 
     // {
     //   name: 'webkit',
