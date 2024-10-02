@@ -1,4 +1,7 @@
 export const Locators = {
+    Common: {
+        waitLbl: '//div[@id="nbuxModalContent"]/../..'
+    },
     CookiesPopUp: {
         accpetBtn: 'button[id="onetrust-accept-btn-handler"]'
     },
@@ -62,14 +65,15 @@ export const Locators = {
     },
     BagPopup: {
         ProductTitle: '(//div[@class="product-title"]/div[@class="product_info"]/h3)[2]',
-        ProductPrice: '(//div[@class="product-details"]/span[@class="product-size"])[2]',
+        ProductPrice: '(//div[@class="product-details"]/span[@class="product-price"])[2]',
         ContinuetoCheckoutBtn: '//a[contains(@class, "gui-btn-primary") and text()="Continue to Checkout"]'
     },
     CheckoutPage: {
         PageTitle: '//div[@class="view-bag-title-links"]/h1[text()="My Order"]',
         fstProductName: '//a[@id="viewItem"]',
         fstProductPrice: '//span[@id="productPrice-1"]',
-        goPaymentBtn: '(//div[@class="gui-btn-inner" and text()="Go to Delivery & Payment"])[1]'
+        goPaymentBtn: '(//div[@class="gui-btn-inner" and text()="Go to Delivery & Payment"])[1]',
+        deleteProductBtn: '//a[@id="removeItem-1"]'
     },
     PaymentPage: {
         OrderSummaryLbl: '//p[text()="Order summary"]',

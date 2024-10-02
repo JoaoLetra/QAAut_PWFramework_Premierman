@@ -1,6 +1,7 @@
 import { Page, BrowserContext } from '@playwright/test';
 import * as fs from 'fs';
 const config = require('../config/settings.json');
+import { Locators } from '../locators/locators';
 
 export default class HomePage {
     readonly page: Page;
@@ -11,8 +12,13 @@ export default class HomePage {
         this.context = context;
     }
 
-    async navigateToHomePage() {
-        await this.page.goto(config.baseUrl);
+    async navigateToHomePage(path = '') {
+        await this.page.goto(config.baseUrl + path);
+    }
+
+    async clickNavBarItem(menu: string) {
+        const locator = Locators.NavBar[menu];
+        await this.page.locator(locator).click();
     }
 
     async setCookies() {
