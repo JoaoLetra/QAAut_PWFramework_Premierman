@@ -5,4 +5,3 @@ node_modules/
 /playwright/.cache/
 cookies.json
 localStorage.json
-sessionStorage.json

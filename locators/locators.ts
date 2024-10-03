@@ -1,7 +1,4 @@
 export const Locators = {
-    Common: {
-        waitLbl: '//div[@id="nbuxModalContent"]/../..'
-    },
     CookiesPopUp: {
         accpetBtn: 'button[id="onetrust-accept-btn-handler"]'
     },
@@ -58,25 +55,4 @@ export const Locators = {
     OutletPage: {
         PageTitle: '//span[@itemprop="title" and text()="Outlet"]'
     },
-    ProductPage: {
-        ProductTitle: '//h1[@id="productTitle"]',
-        ProductPrice: '//div[@class="stars-and-prices"]//span[@class="price-now"]',
-        AddToBagBtn: '//a[@name="addToBag-main"]'
-    },
-    BagPopup: {
-        ProductTitle: '(//div[@class="product-title"]/div[@class="product_info"]/h3)[2]',
-        ProductPrice: '(//div[@class="product-details"]/span[@class="product-price"])[2]',
-        ContinuetoCheckoutBtn: '//a[contains(@class, "gui-btn-primary") and text()="Continue to Checkout"]'
-    },
-    CheckoutPage: {
-        PageTitle: '//div[@class="view-bag-title-links"]/h1[text()="My Order"]',
-        fstProductName: '//a[@id="viewItem"]',
-        fstProductPrice: '//span[@id="productPrice-1"]',
-        goPaymentBtn: '(//div[@class="gui-btn-inner" and text()="Go to Delivery & Payment"])[1]',
-        deleteProductBtn: '//a[@id="removeItem-1"]'
-    },
-    PaymentPage: {
-        OrderSummaryLbl: '//p[text()="Order summary"]',
-        PlaceOrderBtn: '//button[@id="CHKT-PAY-NOW-BUTN"]',
-    }
 };
