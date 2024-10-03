@@ -1,9 +1,6 @@
 import { Page, BrowserContext } from 'playwright';
 import HomePage from './HomePage';
 import { Locators } from '../locators/locators';
-import * as fs from 'fs';
-
-
 
 export async function initializeHomePage(page: Page, context: BrowserContext, path = '') {
     const homePage = new HomePage(page, context);
