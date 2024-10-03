@@ -35,28 +35,19 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'login',
-      use: { ...devices['Desktop Firefox'] },
-      testMatch: '/login.spec.ts',
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
     },
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    //   dependencies: ['login'],
-    //   testIgnore: '/login.spec.ts',
-    // },
-    
+
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-      dependencies: ['login'],
-      testIgnore: '/login.spec.ts'
     },
 
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
 
     /* Test against mobile viewports. */
     // {
