@@ -7,8 +7,7 @@ export class CheckoutPage {
   constructor(private page: Page) { }
 
   async navigateToCheckoutPage() {
-    await this.page.goto(config.baseUrl + '/shop/viewbag/ViewBag.action', { timeout: 60000 });
-    await this.page.waitForLoadState('networkidle', { timeout: 60000 });
+    await this.page.goto(config.baseUrl + '/shop/viewbag/ViewBag.action');
   }
   async verifyFstItemExist() {
     const productNameLocator = this.page.locator(Locators.CheckoutPage.fstProductName);

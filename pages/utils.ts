@@ -1,14 +1,16 @@
 import { Page, BrowserContext } from 'playwright';
 import HomePage from './HomePage';
 import { Locators } from '../locators/locators';
+import * as fs from 'fs';
+
 
 
 export async function initializeHomePage(page: Page, context: BrowserContext, path = '') {
     const homePage = new HomePage(page, context);
-    await homePage.navigateToHomePage(path);
+
     await homePage.setCookies();
-    await homePage.setLocalStorage();
-    await page.reload({ timeout: 60000 });
+    await homePage.setStorage();
+    await homePage.navigateToHomePage(path);
 }
 
 export async function waitForLoadingSpinnerDisappear(page: Page) {

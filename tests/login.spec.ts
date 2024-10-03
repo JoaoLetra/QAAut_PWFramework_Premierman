@@ -21,6 +21,7 @@ test.describe('Login Tests', () => {
         // Check that login was successful
         const accountHeader = await page.locator(Locators.UserAccountPage.userEmail(config.username));
         await expect(accountHeader).toBeVisible();
+        await loginPage.saveSession();
     });
 
     test('Invalid Login', async ({ page }) => {

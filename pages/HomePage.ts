@@ -30,17 +30,30 @@ export default class HomePage {
         }
     }
 
-    async setLocalStorage() {
+    async setStorage() {
         const localStoragePath = 'localStorage.json';
+        const sessionStoragePath = 'sessionStorage.json';
+
         if (fs.existsSync(localStoragePath)) {
             const localStorageString = fs.readFileSync(localStoragePath, 'utf-8');
             const localStorageItems = JSON.parse(localStorageString);
 
-            await this.page.evaluate((items) => {
+            await this.page.addInitScript((items) => {
                 for (const key in items) {
                     localStorage.setItem(key, items[key]);
                 }
             }, localStorageItems);
+        }
+
+        if (fs.existsSync(sessionStoragePath)) {
+            const sessionStorageString = fs.readFileSync(sessionStoragePath, 'utf-8');
+            const sessionStorageItems = JSON.parse(sessionStorageString);
+
+            await this.page.addInitScript((items) => {
+                for (const key in items) {
+                    sessionStorage.setItem(key, items[key]);
+                }
+            }, sessionStorageItems);
         }
     }
 }
