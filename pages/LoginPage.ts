@@ -7,6 +7,7 @@ import { Locators } from '../locators/locators';
 const config = require('../config/settings.json');
 const COOKIES_FILE = 'cookies.json';
 const LOCAL_STORAGE_FILE = 'localStorage.json';
+const SESSION_STORAGE_FILE = 'sessionStorage.json';
 
 
 export class LoginPage {
@@ -31,10 +32,16 @@ export class LoginPage {
     // Save cookies
     const cookies = await this.context.cookies();
     fs.writeFileSync(COOKIES_FILE, JSON.stringify(cookies, null, 2));
+  }
 
+  async saveSession() {
     // Save localStorage
     const localStorage = await this.page.evaluate(() => JSON.stringify(window.localStorage));
     fs.writeFileSync(LOCAL_STORAGE_FILE, localStorage);
+
+    // Save sessionStorage
+    const sessionStorage = await this.page.evaluate(() => JSON.stringify(window.sessionStorage));
+    fs.writeFileSync(SESSION_STORAGE_FILE, sessionStorage);
   }
 
   async login(username: string, password: string) {
