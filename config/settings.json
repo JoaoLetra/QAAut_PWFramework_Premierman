@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://www.premierman.com",
+  "loginUrl": "https://www.premierman.com/shop/signin/display.action",
+  "username": "joao.letra12@gmail.com",
+  "password": "QAAut_PWFramework_Premierman",
+  "reportSenderEmail": "",
+  "reportSenderEmailPW": "",
+  "reportRecepientEmail": "joao.letra12@gmail.com",
+  "reportRecepientName": ""
+}

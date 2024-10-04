@@ -3,3 +3,10 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+cookies.json
+localStorage.json
+sessionStorage.json
+/allure-results/
+/reports
+/allure-report
+/screenshots
