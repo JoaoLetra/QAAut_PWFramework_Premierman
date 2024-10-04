@@ -10,15 +10,14 @@ export class CatalogPage {
   }
 
   async navigateToCatalogPage(menu) {
-    await this.page.goto(config.baseUrl + '/shop/c/' + menu, { timeout: 60000 });
-    await this.page.waitForLoadState('networkidle', { timeout: 60000 });
+    await this.page.goto(config.baseUrl + '/shop/c/' + menu);
   }
 
   // Verify 1st catalog product
   async isFirstProductVisible() {
     const firstProduct = this.page.locator(Locators.CatalogPage.firstProduct);
     await firstProduct.waitFor({ state: 'visible' });
-    return firstProduct.isVisible({ timeout: 60000 });
+    return firstProduct.isVisible();
   }
 
   async selectFirstProduct() {

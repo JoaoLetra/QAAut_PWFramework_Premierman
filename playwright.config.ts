@@ -13,7 +13,7 @@ import { exec } from 'child_process';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  // timeout: 60000,
+  timeout: 60000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -24,7 +24,11 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'allure-playwright',
+  reporter: [
+    ['list'],
+    ['html'],
+    ['allure-playwright']
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -33,7 +37,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
-  globalTeardown: './global-teardown.ts', 
+  globalTeardown: './global-teardown.ts',
 
   /* Configure projects for major browsers */
   projects: [
