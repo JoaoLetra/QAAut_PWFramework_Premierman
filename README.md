@@ -156,8 +156,14 @@ Screenshots are captured during test execution for better visibility of test res
 
 Allure reports are generated after test execution. The report can be generated using:
 
+As single file:
 ```bash
-allure generate ../allure-results --clean -o ../allure-report --single-file
+allure generate allure-results --clean -o allure-report --single-file
+```
+
+As a web site:
+```bash
+allure generate allure-results --clean -o allure-report
 ```
 
 ## Uploading Reports
@@ -192,7 +198,7 @@ npx playwright test tests/testName.spec.ts
 
 ### Generate Allure report:
 ```bash
-npx allure open ../allure-report
+npx allure open allure-report
 ```
 
 
