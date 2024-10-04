@@ -15,7 +15,7 @@ export class CheckoutPage {
   }
 
   async verifyProductInCheckout(expectedTitle: string, expectedPrice: string) {
-    const actualTitle = await this.page.locator(Locators.CheckoutPage.fstProductName).innerText();
+    const actualTitle = await this.page.locator(Locators.CheckoutPage.fstProductName).innerText(); //TODO product name in checkout are not the same at catalog page
     const actualPrice = await this.page.locator(Locators.CheckoutPage.fstProductPrice).innerText();
 
     // expect(actualTitle).toBe(expectedTitle);
