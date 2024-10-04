@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { CatalogPage } from '../pages/CatalogPage';
 import { Locators } from '../locators/locators';
-import { initializeHomePage } from '../pages/utils';
+import { initializeHomePage, screenshot } from '../pages/utils';
 
-test.describe('Browsing Catalog Tests', () => {
+test.describe('BC Browsing Catalog Tests', () => {
     // Before each test, load cookies and localStorage
     test.beforeEach(async ({ page, context }) => {
         await initializeHomePage(page, context);
@@ -21,18 +21,23 @@ test.describe('Browsing Catalog Tests', () => {
         { menu: 'Outlet', locator: Locators.NavBar.OutletBtn, pageTitle: Locators.OutletPage.PageTitle }
     ];
 
-    catalogTests.forEach(({ menu, locator, pageTitle }) => {
-        test(`Navigate to ${menu} catalog and verify products`, async ({ page }) => {
+    catalogTests.forEach(({ menu, locator, pageTitle }, index) => {
+        test(`BC${index + 1} Navigate to ${menu} catalog and verify products`, async ({ page }, testInfo) => {
             const catalogPage = new CatalogPage(page);
 
-            // Navigate to menu
-            await page.locator(locator).click();
+            await test.step('Navigate to menu', async () => {
+                await page.locator(locator).click();
+                await screenshot(page, testInfo, 'Navigate to menu');
+            });
 
-            // Verify page title
-            await expect(page.locator(pageTitle)).toBeVisible();
+            await test.step('Verify page title', async () => {
+                await expect(page.locator(pageTitle)).toBeVisible();
+                await screenshot(page, testInfo, 'Catalog page');
+            });
 
-            // Verify if First Product is Visible
-            expect(await catalogPage.isFirstProductVisible()).toBe(true);
+            await test.step('Verify if First Product is Visible', async () => {
+                expect(await catalogPage.isFirstProductVisible()).toBe(true);
+            });
         });
     });
 });

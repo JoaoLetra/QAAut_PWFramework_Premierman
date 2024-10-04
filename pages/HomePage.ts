@@ -30,7 +30,7 @@ export default class HomePage {
         }
     }
 
-    async setStorage() {
+    async setStorage() { //TODO web site are not loggin in via storage.
         const localStoragePath = 'localStorage.json';
         const sessionStoragePath = 'sessionStorage.json';
 

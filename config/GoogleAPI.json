@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "playwrightqaframework",
+  "private_key_id": "897a183f962e6e95b4edbbac70f44947744c0864",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC37m9syqG3W+bu\n4fYR7+15nO+m3HWznShu3mCtVqaIqpeRf4TSs8avLTU4x6pW9kNikkeNKl1jB2Z3\nmujO7OkAgWUjRyXXp3MS68um6qOm7LkA6qsH9tuvZWO66E1L0fDVxqGFre/iv3sB\nhpjQOy27IndMDm82RDS94NVDbI1ikBMfqnmXx2cHMzBI37ZmSBUpB7MpUKaqvMU4\nWidKyC7/cjzfQcuJ7J1wQ32B6+ogJB0LZUrlbZ4wnHCntrrJ/1QTsAq41a7uFHkV\nGy9F5+koDfc4JzEKctG0f9slqY2VM7xeaWqSSrDJYv3kFIjhcnaRP274Putfb6k9\nnEAGH58BAgMBAAECggEAEIs1AQFR3er5gNOYvUDKKKXlxWmveY4heKVuZzDzzjef\n5fGlGgmbDZ8gmiCVcPh6E6fqISemGjXscMYhehlDlOzOksd/vx+74UANw4/309gX\nhN5Wr2L0HBjfyUxDRZZW1feliB9exBOqhfbcEGC+SoZ9Wf0zYhts7gZG0Gd3aR26\n2eou06ZAOXo5ZA9frtj7Y/3Kk+++9IdNQtE62p8wrm58IfMCKjKJEz295VOFDl12\nydd8QAlZTgOa6EtEoj69hrMXu3vvqydk551OLVgHkZNs5FCtszgROj8JqYsXEgdZ\nkocgL2ocJlynXjkbl7P4Mx9nZcA8FAmuvaUURzcXUQKBgQDe13pG3N0yot26mBw1\no4kvYx2SYyJWE+YxX3zQ8PBeJtQkTVtpz8J8DA9U2Pl9TR2KpNHfNjeZLMNlGTke\nkeLiULuSx9bgalepzur/JFRp11bW5Ez1by2FKbu7EV21JksDKP6tDz0qT70GiBCs\ncLm9uLKXIzfoxte/TTxMwUtZKQKBgQDTTMeDokFF+z04tF4bz/686HcByfS7vK+Q\n8W9FcSa+p7tJuRO/qje2Mquwk8d9hEcymFU/sL+Y1zUQCLv0dxwNd1Gw0YjyL+r4\nue1GFrA33CoX/VySZxzCxfglTxOciktQBPP50kwG5Pf1x5algCsmQosxItWpPbJ4\nFn25TP/aGQKBgH8SCnT8HtpwCtYLRRLFJUYzU7qU8xB4mmwPEkKnEbnulEv7HKRy\nx2krC1cLvwDXh3/2yoJpDT04TFeLEYpAEEuTU9K4R+yCV2jKSDCji8sq8ybo2oWe\nFyv3B0j99xyEMIQlzUvsA6nr/FMMJc3fHdt0xcnvWENRl9dLeJYgJxI5AoGBAIU2\n9NpSo2BhgzmKzYIvYeTrkov4LWlnDjENZh+btNeim/tgycieoj0mOQQ8RxslGFYX\noDdlUYYkt/mB6C26Il+DCGe30uUNvNBPN/5mM3ckQQ2a2JAcng9WDJpI/o5EyjKK\nzN6F7RSzqniz+pAg/BNFBMhXs+jdUvVPCLiYiP2RAoGBAK/k6aZpxjv0yLCofykL\nDBPMCwhVfds7NBRiSCY115hVpbSmZofoNBdbEnBTtDUYuD7j0loW4Z6Ns+68BQYA\n+cyJRMItTq4xz0qji1daqo/y1DieRMd5IfdgdKfR9+GAPaWJpJ2aaRBaqZIypyZ1\n3rVb3B0EGSEIJwy9pu1aM9Fp\n-----END PRIVATE KEY-----\n",
+  "client_email": "playwrightframework@playwrightqaframework.iam.gserviceaccount.com",
+  "client_id": "100163263080384171229",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/playwrightframework%40playwrightqaframework.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

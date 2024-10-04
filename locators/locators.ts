@@ -71,7 +71,7 @@ export const Locators = {
     CheckoutPage: {
         PageTitle: '//div[@class="view-bag-title-links"]/h1[text()="My Order"]',
         fstProductName: '//a[@id="viewItem"]',
-        fstProductPrice: '//span[@id="productPrice-1"]',
+        fstProductPrice: '//div[@class="product-prices "]/p/span[@class="now"]',
         goPaymentBtn: '(//div[@class="gui-btn-inner" and text()="Go to Delivery & Payment"])[1]',
         deleteProductBtn: '//a[@id="removeItem-1"]'
     },
