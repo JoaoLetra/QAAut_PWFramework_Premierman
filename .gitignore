@@ -6,3 +6,6 @@ node_modules/
 cookies.json
 localStorage.json
 sessionStorage.json
+/allure-results/
+/reports
+/allure-report
